@@ -1,4 +1,4 @@
-"""Parsons programming-problem
+"""Parsons programming-problem.
 
 Instruktion
 ===========
@@ -11,11 +11,11 @@ Alla docstrings har placerats före kodraderna som ska användas för problemet.
 """
 
 
-"""Givet en lista med tal, beräkna den löpande summan."""
-return total
-total.append(current)
-for n in numbers:
-total = []
 def running_total(numbers):
-current = 0
-current += n
+    """Givet en lista med tal, beräkna den löpande summan."""
+    total = []
+    current = 0
+    for n in numbers:
+        current += n
+        total.append(current)
+    return total

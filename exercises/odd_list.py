@@ -1,4 +1,4 @@
-"""Parsons programming-problem
+"""Parsons programming-problem.
 
 Instruktion
 ===========
@@ -11,12 +11,12 @@ Alla docstrings har placerats före kodraderna som ska användas för problemet.
 """
 
 
-"""Givet en lista, returnera alla värden på udda positioner."""
-result.append(item)
-for item in l:
-if index % 2 == 1:
-return result
-result = []
 def odd_list(l):
-index = 0
-index += 1
+    """Givet en lista, returnera alla värden på udda positioner."""
+    result = []
+    index = 0
+    for item in l:
+        if index % 2 == 1:
+            result.append(item)
+        index += 1
+    return result
