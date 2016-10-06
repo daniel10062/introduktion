@@ -11,11 +11,11 @@ Alla docstrings har placerats före kodraderna som ska användas för problemet.
 """
 
 
-def odd_list(l):
+def odd_list(d):
     """Givet en lista, returnera alla värden på udda positioner."""
     result = []
     index = 0
-    for item in l:
+    for item in d:
         if index % 2 == 1:
             result.append(item)
         index += 1
